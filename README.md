@@ -1,4 +1,4 @@
-#CSS Ppinner
+#CSS Spinner
 Fluent Design CSS Spinner
 
 Microsoft Fluent Design Spinner using css
