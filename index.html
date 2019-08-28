@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+.ac-spinner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.ac-spinner .sp-circle {
+    box-sizing: border-box;
+    animation-name: ac-sp-animation;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.53, 0.21, 0.29, 0.67);  
+    border-radius: 50%;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: rgb(0, 120, 212) rgb(199, 224, 244) rgb(199, 224, 244);
+    border-image: initial;
+
+    /*Dependent CSS*/
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(50, 49, 48);
+
+}
+
+
+.ac-spinner .sp-label {
+    font-family: "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(0, 120, 212);
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 8px;
+    text-align: center;
+}
+
+
+.ac-spinner .sp-lg
+{
+    width: 28px;
+    height: 28px;
+}
+
+.ac-spinner .sp-md
+{
+    width: 20px;
+    height: 20px;
+}
+
+.ac-spinner .sp-sm
+{
+    width: 16px;
+    height: 16px;
+}
+
+@keyframes ac-sp-animation {
+  0% {
+        transform: rotate(0deg);
+  }
+
+  100%{
+        transform: rotate(360deg);
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class="ac-spinner">
+    <div class="sp-circle sp-lg"></div>
+    <div class="sp-label">Seriously, still loading large...</div>
+</div>
+
+<br/>
+
+<div class="ac-spinner">
+    <div class="sp-circle sp-md"></div>
+    <div class="sp-label">Seriously, still loading meduim...</div>
+</div>
+
+<br/>
+
+<div class="ac-spinner">
+    <div class="sp-circle sp-sm"></div>
+    <div class="sp-label">Seriously, still loading small...</div>
+</div>
+
+
+</body>
+</html>
